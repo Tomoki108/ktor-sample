@@ -8,7 +8,6 @@
     "vscode": {
       "extensions": [
         "fwcd.kotlin",
-        "mathiasfrohlich.Kotlin",
         "vscjava.vscode-gradle",
         "saoudrizwan.claude-dev"
       ]
