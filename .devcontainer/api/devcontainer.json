@@ -1,0 +1,19 @@
+{
+  "name": "Ktor API Dev Container",
+  "dockerComposeFile": "../../compose.yml",
+  "service": "api",
+  "workspaceFolder": "/app",
+  "shutdownAction": "stopCompose",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "fwcd.kotlin",
+        "mathiasfrohlich.Kotlin",
+        "vscjava.vscode-gradle",
+        "saoudrizwan.claude-dev"
+      ]
+    },
+    "runArgs": ["--env-file","../devcontainer.env"]
+  },
+  "remoteUser": "root"
+}
