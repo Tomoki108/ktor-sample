@@ -2,9 +2,8 @@ services:
   api:
     build:
       context: ./api
-      dockerfile: Dockerfile
-      target: dev
+      dockerfile: Dockerfile.dev
     ports:
       - "8080:8080"
     volumes:
-      - ./api/src:/app/src
+      - ./api:/app
