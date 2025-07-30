@@ -3,15 +3,10 @@ services:
     build:
       context: ./api
       dockerfile: Dockerfile
+      target: dev
     ports:
       - "8080:8080"
-      - "5005:5005" # For Dev Container
     environment:
       - JAVA_OPTS=-Xmx512m
     volumes:
-      - ./api:/app
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
-      interval: 30s
-      timeout: 3s
-      retries: 3
+      - ./api/src:/app/src
